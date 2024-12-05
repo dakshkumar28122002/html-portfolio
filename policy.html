@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>PetLover - Pet Care Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Flaticon Font -->
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<style>
+    /* Animation Styles */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Apply Animations to Homepage Sections */
+#hero, #services, #contact {
+    animation: fadeIn 1s ease-out;
+}
+
+#about {
+    animation: slideIn 1s ease-out;
+}
+
+/* Service Cards Animation */
+.d-flex.flex-column.text-center.bg-white.mb-2 {
+    animation: fadeIn 1s ease-out;
+    transition: transform 0.3s ease-out;
+}
+
+.d-flex.flex-column.text-center.bg-white.mb-2:hover {
+    transform: scale(1.05);
+}
+
+/* Animated Footer */
+footer {
+    animation: scaleUp 1s ease-out;
+}
+</style>
+
+<body>
+
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
+            <a href="" class="navbar-brand d-block d-lg-none">
+                <h1 class="m-0 display-5 text-capitalize font-italic text-white"><span class="text-primary">Safety</span>First</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                <div class="row py-3 px-lg-5">
+                    <div class="col-lg-4">
+                        <a href="./index.html" class="navbar-brand d-none d-lg-block">
+                            <h1 class="m-0 display-5 text-capitalize"><span class="text-primary">Petsree</h1>
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar-nav mr-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="service.html" class="nav-item nav-link">Service</a>
+                    <a href="price.html" class="nav-item nav-link">Price</a>
+                    <a href="./community.html" class="nav-item nav-link">Community</a>
+                    <a href="./policy.html" class="nav-item nav-link">Our policy</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <a href="./contact.html" class="btn btn-lg btn-primary px-3 d-none d-lg-block">Get Quote</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container-fluid bg-light pt-5">
+        <div class="container py-5">
+            <div class="d-flex flex-column text-center mb-5">
+                <h4 class="text-secondary mb-3">Our Policy</h4>
+            </div>
+            <div class="row pb-3">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5">
+                        <h3 class="mb-3">Privacy Policy</h3>
+                        <p>At Petsree, we take your privacy seriously. Our Privacy Policy outlines how we collect, use, and protect your personal information. To learn more, please review our Privacy Policy.</p>
+                        <a class="text-uppercase font-weight-bold" href="">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5">
+                        <h3 class="mb-3">Terms of Service</h3>
+                        <p>By using Petsree, you agree to our Terms of Service. These terms cover the rules and guidelines for using our platform. Be sure to read our Terms of Service for a complete understanding of your responsibilities and our expectations.</p>
+                        <a class="text-uppercase font-weight-bold" href="">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5">
+                        <h3 class="mb-3">Community Guidelines</h3>
+                        <p>Petsree is built on a foundation of respect and positive interactions. Our Community Guidelines outline the expectations for behavior within our community. To foster a welcoming environment, please follow our Community Guidelines.</p>
+                        <a class="text-uppercase font-weight-bold" href="">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5">
+                       
+                        <h3 class="mb-3">Pet Care Agreement</h3>
+                        <p>When engaging in pet-sitting services through Petsree, both pet owners and sitters agree to our Pet Care Agreement. This document covers responsibilities, payment terms, and care expectations. Read the Pet Care Agreement for a comprehensive understanding.</p>
+                        <a class="text-uppercase font-weight-bold" href="">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5">
+                        
+                        <h3 class="mb-3">Refund and Cancellation Policy</h3>
+                        <p>Our Refund and Cancellation Policy details the conditions under which refunds are provided and the process for canceling pet-sitting services. For more information, please review our Refund and Cancellation Policy.</p>
+                        <a class="text-uppercase font-weight-bold" href="">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5">
+                       
+                        <h3 class="mb-3">Code of Conduct for Sitters</h3>
+                        <p>To maintain professionalism and quality service, pet sitters on Petsree adhere to a Code of Conduct. This code outlines expectations for communication, punctuality, and the treatment of pets. Read our Code of Conduct for Sitters for more details.</p>
+                        <a class="text-uppercase font-weight-bold" href="">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5">
+                        
+                        <h3 class="mb-3"> Safety and Security Measures</h3>
+                        <p>Ensuring the safety and security of our users is a top priority. Learn about our safety protocols, verification processes, and insurance coverage in our Safety and Security Measures.</p>
+                        <a class="text-uppercase font-weight-bold" href="">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5">
+                        
+                        <h3 class="mb-3">Payment and Billing Terms</h3>
+                        <p>Understand our accepted payment methods, billing cycle, and any associated fees by reviewing our Payment and Billing Terms.</p>
+                        <a class="text-uppercase font-weight-bold" href="">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5">
+                        
+                        <h3 class="mb-3">Dispute Resolution</h3>
+                        <p>Our Dispute Resolution process is in place to handle conflicts between pet owners and sitters. To learn more about how we address disputes, please read our Dispute Resolution.</p>
+                        <a class="text-uppercase font-weight-bold" href="">Read More</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+<body>
+   
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

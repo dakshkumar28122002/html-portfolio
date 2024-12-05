@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>PetLover - Pet Care Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Flaticon Font -->
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        /* Animation Styles */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+/* Hover Effect */
+.d-flex.flex-column.text-center.bg-white.mb-2 {
+    animation: fadeIn 1s ease-out;
+    transition: transform 0.3s ease-out;
+}
+
+.d-flex.flex-column.text-center.bg-white.mb-2:hover {
+    transform: scale(1.05);
+}
+    </style>
+</head>
+<div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
+        <a href="" class="navbar-brand d-block d-lg-none">
+            <h1 class="m-0 display-5 text-capitalize font-italic text-white"><span class="text-primary">Safety</span>First</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+            <div class="row py-3 px-lg-5">
+                <div class="col-lg-4">
+                    <a href="./index.html" class="navbar-brand d-none d-lg-block">
+                        <h1 class="m-0 display-5 text-capitalize"><span class="text-primary">Petsree</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="navbar-nav mr-auto py-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="service.html" class="nav-item nav-link">Service</a>
+                <a href="price.html" class="nav-item nav-link">Price</a>
+                <a href="./community.html" class="nav-item nav-link">Community</a>
+                <a href="./policy.html" class="nav-item nav-link">Our policy</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="./contact.html" class="btn btn-lg btn-primary px-3 d-none d-lg-block">Get Quote</a>
+        </div>
+    </nav>
+</div>
+<body>
+    <div class="container-fluid bg-light pt-5">
+        <div class="container py-5">
+            <div class="d-flex flex-column text-center mb-5">
+                <h4 class="text-secondary mb-3">Our Services</h4>
+                <h1 class="display-4 m-0"><span class="text-primary">Premium</span> Pet Services</h1>
+            </div>
+            <div class="row pb-3">
+                <!-- Pet Boarding Service -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5">
+                        <h3 class="flaticon-house display-3 font-weight-normal text-secondary mb-3"></h3>
+                        <h3 class="mb-3">Pet Boarding</h3>
+                        <p>When you need to be away, our safe and comfortable pet boarding options ensure your pets receive the care they deserve. Let us take care of your furry friends.</p>
+                        <a class="text-uppercase font-weight-bold" href="#">Read More</a>
+                    </div>
+                </div>
+    
+                <!-- Pet Feeding Service -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5">
+                        <h3 class="flaticon-food display-3 font-weight-normal text-secondary mb-3"></h3>
+                        <h3 class="mb-3">Pet Feeding</h3>
+                        <p>Ensure your pets are well-nourished with our pet feeding services. Our passionate sitters make sure your pets get the right nutrition and care in your absence.</p>
+                        <a class="text-uppercase font-weight-bold" href="#">Read More</a>
+                    </div>
+                </div>
+    
+                <!-- Pet Grooming Service -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5">
+                        <h3 class="flaticon-grooming display-3 font-weight-normal text-secondary mb-3"></h3>
+                        <h3 class="mb-3">Pet Grooming</h3>
+                        <p>Pamper your pets with our pet grooming services. Our professional groomers ensure your pets not only look good but also feel their best.</p>
+                        <a class="text-uppercase font-weight-bold" href="#">Read More</a>
+                    </div>
+                </div>
+    
+                <!-- Pet Training Service -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5">
+                        <h3 class="flaticon-cat display-3 font-weight-normal text-secondary mb-3"></h3>
+                        <h3 class="mb-3">Pet Training</h3>
+                        <p>Enhance the bond with your pets through our pet training services. Our skilled trainers use positive reinforcement techniques for effective and enjoyable training sessions.</p>
+                        <a class="text-uppercase font-weight-bold" href="#">Read More</a>
+                    </div>
+                </div>
+    
+                <!-- Pet Exercise Service -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5">
+                        <h3 class="flaticon-dog display-3 font-weight-normal text-secondary mb-3"></h3>
+                        <h3 class="mb-3">Pet Exercise</h3>
+                        <p>Keep your pets active and healthy with our pet exercise services. Our dedicated sitters ensure your furry friends get the right amount of exercise tailored to their needs.</p>
+                        <a class="text-uppercase font-weight-bold" href="#">Read More</a>
+                    </div>
+                </div>
+    
+                <!-- Pet Treatment Service -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5">
+                        <h3 class="flaticon-vaccine display-3 font-weight-normal text-secondary mb-3"></h3>
+                        <h3 class="mb-3">Pet Treatment</h3>
+                        <p>Ensure the well-being of your pets with our pet treatment services. Our experienced caretakers administer treatments with care and expertise to keep your pets healthy.</p>
+                        <a class="text-uppercase font-weight-bold" href="#">Read More</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    </div>
+   
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <footer class="py-4 bg-dark text-white">
+    <div class="container">
+        <div class="row">
+            <!-- Contact Information -->
+            <div class="col-md-4">
+                <h3>Contact Us</h3>
+                <p>Email: info@petlover.com</p>
+                <p>Phone: +1 (123) 456-7890</p>
+                <p>Address: 123 Pet Avenue, Cityville, ST 12345</p>
+            </div>
+            <!-- Quick Links -->
+            <div class="col-md-4">
+                <h3>Quick Links</h3>
+                <ul class="list-unstyled">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="price.html">Price</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Social Media -->
+            <div class="col-md-4">
+                <h3>Connect With Us</h3>
+                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright -->
+    <div class="container mt-3 text-center">
+        <p>&copy; 2023 PetLover. All rights reserved.</p>
+    </div>
+</footer>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

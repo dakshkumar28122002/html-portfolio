@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Petsree</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Flaticon Font -->
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        /* Animation Styles */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Hover Effect */
+        .d-flex.flex-column.text-center.bg-white.mb-2 {
+            animation: fadeIn 1s ease-out;
+            transition: transform 0.3s ease-out;
+        }
+
+        .d-flex.flex-column.text-center.bg-white.mb-2:hover {
+            transform: scale(1.05);
+        }
+
+        /* Community Section Styles */
+        #community-section {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+        }
+
+        .post-container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .post {
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        #postModal {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        /* Profile Picture Styles */
+        .profile-picture {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        /* Comments Section Styles */
+        .comments {
+            margin-top: 10px;
+        }
+
+        .comment {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
+            <a href="" class="navbar-brand d-block d-lg-none">
+                <h1 class="m-0 display-5 text-capitalize font-italic text-white"><span class="text-primary">Safety</span>First</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                <div class="row py-3 px-lg-5">
+                    <div class="col-lg-4">
+                        <a href="./index.html" class="navbar-brand d-none d-lg-block">
+                            <h1 class="m-0 display-5 text-capitalize"><span class="text-primary">Petsree</h1>
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar-nav mr-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="service.html" class="nav-item nav-link">Service</a>
+                    <a href="price.html" class="nav-item nav-link">Price</a>
+                    <a href="./community.html" class="nav-item nav-link">Community</a>
+                    <a href="./policy.html" class="nav-item nav-link">Our policy</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <a href="./contact.html" class="btn btn-lg btn-primary px-3 d-none d-lg-block">Get Quote</a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Community Section -->
+    <section id="community-section">
+        <div class="container">
+            <h2 class="text-center mb-4">Community</h2>
+
+            <!-- Post Container -->
+            <div class="post-container">
+                <!-- Example Post -->
+                <div class="post">
+                    <div class="d-flex align-items-center">
+                        <img src="/img/WhatsApp Image 2024-11-05 at 20.56.29_e93852b2.jpg" alt="Profile Picture" class="rounded-circle profile-picture mr-2" style="width: 40px; height: 40px;">
+                        <h4 class="mb-0">Daksh Kumar</h4>
+                    </div>
+                    <p class="mt-2">Hey, anyone want a pet sitter for their pet? Connect with me</p>
+                    <small class="text-muted">Posted on: December 20, 2023</small>
+
+                    <!-- Like, Comment, and Message Buttons -->
+                    <div class="mt-3">
+                        <button class="btn btn-outline-primary btn-sm mr-2" onclick="likePost(this)">Like</button>
+                        <button class="btn btn-outline-secondary btn-sm mr-2" data-toggle="modal" data-target="#commentModal" onclick="openCommentModal(this)">Comment</button>
+                        <button class="btn btn-outline-success btn-sm" data-toggle="modal" data-target="#messageModal" onclick="openMessageModal(this)">Message</button>
+                    </div>
+
+                    <!-- Comments Section -->
+                    <div class="comments mt-3">
+                        <!-- Display comments here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add New Post Button (Moved to the Right) -->
+            <button class="btn btn-primary float-right" data-toggle="modal" data-target="#postModal">Add New Post</button>
+        </div>
+    </section>
+
+    <!-- Comment Modal -->
+    <div class="modal fade" id="commentModal" tabindex="-1" role="dialog" aria-labelledby="commentModalLabel" aria-hidden="true">
+        <!-- Modal content for commenting -->
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="commentModalLabel">Add Comment</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="commentContent">Write your comment:</label>
+                            <textarea class="form-control" id="commentContent" name="commentContent" rows="3" required></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="addComment()">Comment</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Message Modal -->
+    <div class="modal fade" id="messageModal" tabindex="-1" role="dialog" aria-labelledby="messageModalLabel" aria-hidden="true">
+        <!-- Modal content for messaging -->
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <!-- Your messaging modal content here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Post Modal -->
+    <div class="modal fade" id="postModal" tabindex="-1" role="dialog" aria-labelledby="postModalLabel" aria-hidden="true">
+        <!-- Modal content for adding a new post -->
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                        <h5 class="modal-title" id="postModalLabel">Add New Post</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="postContent">Write your post:</label>
+                                <textarea class="form-control" id="postContent" name="postContent" rows="4" required></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="addPost()">Post</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+    
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    
+        <script>
+           
+            function likePost(button) {
+                var post = $(button).closest(".post");
+                var likeButton = $(button);
+    
+                
+                if (likeButton.hasClass("btn-primary")) {
+                    likeButton.removeClass("btn-primary");
+                  
+                } else {
+                    likeButton.addClass("btn-primary");
+                   
+                }
+            }
+    
+            
+            function openCommentModal(button) {
+                var post = $(button).closest(".post");
+              
+                displayComments(post);
+            }
+    
+          
+            function openMessageModal(button) {
+                var post = $(button).closest(".post");
+            
+            }
+    
+            // Function to display comments
+            function displayComments(post) {
+                var commentsContainer = post.find(".comments");
+               
+            }
+    
+            // Function to add a new comment
+            function addComment() {
+                var commentContent = $("#commentContent").val();
+                var commentsContainer = $(".modal.show .comments");
+    
+                // Check if the post is open in the modal
+                if (commentsContainer.length > 0) {
+                    // Create a new comment element
+                    var newComment = `
+                        <div class="comment">
+                            <strong>Your Name:</strong> ${commentContent}
+                        </div>
+                    `;
+                    // Append the new comment to the comments container
+                    commentsContainer.append(newComment);
+                }
+    
+               
+                $("#commentContent").val("");
+    
+                $(".modal.show").modal("hide");
+            }
+    
+         
+            function sendMessage(post, messageContent) {
+                
+            }
+    
+        
+            function addPost() {
+                var postContent = $("#postContent").val();
+                var newPost = `
+                    <div class="post">
+                        <h4>Your Name</h4>
+                        <p>${postContent}</p>
+                        <small>Posted on: ${getCurrentDate()}</small>
+                    </div>
+                `;
+    
+                $("#community-section .post-container").prepend(newPost);
+    
+              
+                $("#postContent").val("");
+    
+               
+                $("#postModal").modal("hide");
+            }
+            function getCurrentDate() {
+                var options = { year: 'numeric', month: 'long', day: 'numeric' };
+                return new Date().toLocaleDateString(undefined, options);
+            }
+        </script>
+    </body>
+    
+    </html>
+    

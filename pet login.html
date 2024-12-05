@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container-fluid {
+            padding: 0;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .registration-container {
+            background-color: #BDB09D;
+            padding: 20px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .registration-form {
+            max-width: 400px;
+            width: 100%;
+        }
+    </style>
+    <title>Pet Owner Form</title>
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
+            <a href="" class="navbar-brand d-block d-lg-none">
+                <h1 class="m-0 display-5 text-capitalize font-italic text-white"><span class="text-primary">Safety</span>First</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                <div class="row py-3 px-lg-5">
+                    <div class="col-lg-4">
+                        <a href="./index.html" class="navbar-brand d-none d-lg-block">
+                            <h1 class="m-0 display-5 text-capitalize"><span class="text-primary">Petsree</h1>
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar-nav mr-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="service.html" class="nav-item nav-link">Service</a>
+                    <a href="price.html" class="nav-item nav-link">Price</a>
+                    <a href="./community.html" class="nav-item nav-link">Community</a>
+                    <a href="./policy.html" class="nav-item nav-link">Our policy</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <a href="./contact.html" class="btn btn-lg btn-primary px-3 d-none d-lg-block">Get Quote</a>
+            </div>
+        </nav>
+    </div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-9">
+            <img src="./img/about-1.jpg" width="2000px">
+        </div>
+        <div class="col-md-3">
+            <div class="registration-container">
+                <h1 class="text-2xl p-2 m-2 font-bold text-white">Register as a Pet Sitter</h1>
+                <form class="registration-form" id="registrationForm">
+                    <div class="mb-3">
+                        <label for="username" class="form-label text-white">Username:</label>
+                        <input type="text" class="form-control" id="username" name="username" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label text-white">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="location" class="form-label text-white">Location:</label>
+                        <input type="text" class="form-control" id="location" name="location" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phoneNo" class="form-label text-white">Phone no:</label>
+                        <input type="text" class="form-control" id="phoneNo" name="phoneNo" required>
+                    </div>
+                    <a class="btn btn-success" href="./index.html">Submit</a>
+                </form>
+                <div id="registrationResult"></div>
+            </div>
+            
+            <script>
+                function registerUser() {
+                    // Get form data
+                    const username = document.getElementById('username').value;
+                    const email = document.getElementById('email').value;
+                    const petType = document.getElementById('petType').value;
+                    const phoneNo = document.getElementById('phoneNo').value;
+                    window.location.href = "./index.html";
+                
+                    // Display the user's information (for demonstration purposes)
+                    const resultContainer = document.getElementById('registrationResult');
+                    resultContainer.innerHTML = `
+                        <h2>Registration Successful</h2>
+                        <p>Username: ${username}</p>
+                        <p>Email: ${email}</p>
+                        <p>Location: ${location}</p>
+                        <p>Phone No: ${phoneNo}</p>
+                        
+                    `;
+                
+                    // Redirect to a different page after registration
+                    window.location.href ="./index.html";
+                }
+                </script>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and Popper.js (Optional) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
